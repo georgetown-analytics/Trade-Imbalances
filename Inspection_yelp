@@ -1,0 +1,4 @@
+#obtaining food inspection data
+myConnection = psycopg2.connect( host=host, user=user, password=password, dbname=dbname )
+cur = myConnection.cursor()
+cur.execute("Select * FROM food_inspection;")
